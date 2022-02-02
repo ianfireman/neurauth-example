@@ -5,10 +5,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import routes from "./routes/index";
 import { ENVIRONMENT } from "./config/secrets";
-import connectDatabase from "./config/database";
 import { notFound, defaultError } from "./middlewares/errorHandler";
-
-connectDatabase();
 
 const app = express();
 
